@@ -5,12 +5,12 @@ This is small tool for debug hashes for keycloak
 COMPILE: javac hashgen.java
 RUN: java -cp . hashgen {Password} {SaltInBase64} {Iterations} {PBKDF2_ALGORITHM}
 Examples:
-1) java -cp . hashgen hascat bYjGueAuZgUG2URhIui3zg== 20000 PBKDF2WithHmacSHA1
-Hash: Zkx8CUgzVzQIfbFH/eXMCDrDp7SBdfxZIL8w4RcKXhw8Q/g04z/4VuPsSo7CAlx9mHmkSSj7Le2lZ8HsTMOWzw==
-2) java -cp . hashgen hascat bYjGueAuZgUG2URhIui3zg== 100000 PBKDF2WithHmacSHA256
+1) java -cp . hashgen hashcat bYjGueAuZgUG2URhIui3zg== 20000 PBKDF2WithHmacSHA1
+Hash: Ir7uS0o9ouav1VCly0801VyioaQ/1sjwViHFmgD4kakDzzI39fRSifJutjbkd33U914v9QMVy+pF5k+xp+86cQ==
+2) java -cp . hashgen hashcat bYjGueAuZgUG2URhIui3zg== 100000 PBKDF2WithHmacSHA256
 Hash: 1IqX6hPxxAGwf/aZUUTKpZzf7MLYTLWNFTtGwTfwQA9mU04tA8M4Y1d2yAwF6MFWOiYZpEnIX//RdsY81UGnQw==
-3) java -cp . hashgen hascat bYjGueAuZgUG2URhIui3zg== 27500 PBKDF2WithHmacSHA512
-Hash: LLbVxMa3ccS1x/zW1jahLrjzXGIVwavu4dH/gDe16VmN9kVr/WzdGC6KpXAaHlFWWHMQjNteZHDyXixOjqE50A==
+3) java -cp . hashgen hashcat bYjGueAuZgUG2URhIui3zg== 27500 PBKDF2WithHmacSHA512
+Hash: MTkajtRaak3UDWUlYANtTt/D+CpYSq9OK0Yzs5WTz32eydupgcNE88f8SMNUhCHtwGiFVkfTKAIZynCa3i46Iw==
 */
 
 import java.util.Base64;
