@@ -1,6 +1,6 @@
 /*
 
-This is small tool for debug hashes for keycloak
+This is small tool to debug hashes for keycloak
 
 COMPILE: javac hashgen.java
 RUN: java -cp . hashgen {Password} {SaltInBase64} {Iterations} {PBKDF2_ALGORITHM}
