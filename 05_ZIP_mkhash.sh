@@ -1,5 +1,5 @@
-export JOHN=./JtR/zip2john
-# export JOHN=zip2john
+# export JOHN=./JtR/zip2john
+export JOHN=/usr/sbin/zip2john
 
 echo Algo: ZIP 
 echo Pass: $1
